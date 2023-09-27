@@ -104,7 +104,7 @@ public class Minibank_counter_우혜지__2 { // ##1. 클래스는 대문자
 						money = 0;
 						System.out.println("삭제완료.잘 가세요...");
 					} else if (del == 'N' || del == 'n') {
-						System.out.println("삭제취소.어서 오세요...");
+						System.out.println("삭제취소.1어서 오세요...");
 					}
 				} else if(userid != t_userid3 || userpw != t_userpw3) {
 					System.out.println("사용자가 없습니다.");
@@ -112,6 +112,7 @@ public class Minibank_counter_우혜지__2 { // ##1. 클래스는 대문자
 				break;
 			case 9:
 				System.out.println("종료기능 입니다. BYE~ ");
+				se = false;
 			}
 			
 		}
