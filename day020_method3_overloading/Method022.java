@@ -12,10 +12,8 @@ public class Method022 {
 	}
 	private static void disp_swipe(String[] name) {	
 		String temp = "";
-		
 		temp = name[0];
 		name[0] = name[1];
 		name[1] = temp;
-			
 	}
 }

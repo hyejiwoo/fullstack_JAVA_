@@ -77,7 +77,7 @@ public class Minibank_counter_우혜지__2 { // ##1. 클래스는 대문자
 					remain = scanner.nextInt();
 					if (remain > money) {
 						System.out.println("잔액이 부족해요.");
-					} else if (remain < money) {
+					}else if (remain < money) {
 						System.out.println("===출금완료");
 						System.out.println("잔액 :" + (money - remain));
 						money = money - remain;
@@ -102,18 +102,20 @@ public class Minibank_counter_우혜지__2 { // ##1. 클래스는 대문자
 						age = 0;
 						remain = 0;
 						money = 0;
-						System.out.println("삭제완료.");
+						System.out.println("삭제완료.잘 가세요...");
 					} else if (del == 'N' || del == 'n') {
-						System.out.println("삭제취소.");
+						System.out.println("삭제취소.어서 오세요...");
 					}
 				} else if(userid != t_userid3 || userpw != t_userpw3) {
 					System.out.println("사용자가 없습니다.");
 				}
 				break;
 			case 9:
-				System.out.println("종료기능 입니다.");
+				System.out.println("종료기능 입니다. BYE~ ");
 			}
-
+			
 		}
+
+		scanner.close();
 	}
 }
