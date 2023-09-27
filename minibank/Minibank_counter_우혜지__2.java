@@ -80,6 +80,7 @@ public class Minibank_counter_우혜지__2 { // ##1. 클래스는 대문자
 					} else if (remain < money) {
 						System.out.println("===출금완료");
 						System.out.println("잔액 :" + (money - remain));
+						money = money - remain;
 					}
 				} else if (userid != t_userid2 || userpw != t_userpw2) {
 					System.out.println("사용자가 없습니다.");
@@ -89,15 +90,21 @@ public class Minibank_counter_우혜지__2 { // ##1. 클래스는 대문자
 				System.out.println("id :");
 				char t_userid3 = scanner.next().charAt(0);
 				System.out.println("pass :");
-				char t_userpw3 = scanner.next().charAt(0);
+				char t_userpw3 = scanner.next().charAt(0);	
 
 				if (userid == t_userid3 && userpw == t_userpw3) {
 					System.out.println("계좌를 삭제하시겠습니까? (Y/N)");
 					del = scanner.next().charAt(0);
 					if (del == 'Y' || del == 'y') {
+						plus = 0;
+						userid = ' '; 
+						userpw = ' '; 
+						age = 0;
+						remain = 0;
+						money = 0;
 						System.out.println("삭제완료.");
-					} else if (del == 'X' || del == 'x') {
-						System.out.println("감사해요...");
+					} else if (del == 'N' || del == 'n') {
+						System.out.println("삭제취소.");
 					}
 				} else if(userid != t_userid3 || userpw != t_userpw3) {
 					System.out.println("사용자가 없습니다.");
